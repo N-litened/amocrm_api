@@ -354,7 +354,7 @@ class LeadTask(_AbstractTaskModel):
     _element_type = fields._ConstantField('element_type',
                                          _BaseModel._ELEMENT_TYPES['lead'])
 
-    objects = TasksManager(object_type='lead')
+    objects = TasksManager()
 
 
 class ContactTask(_AbstractTaskModel):
@@ -362,7 +362,7 @@ class ContactTask(_AbstractTaskModel):
     _element_type = fields._ConstantField('element_type',
                                          _BaseModel._ELEMENT_TYPES['contact'])
 
-    objects = TasksManager(object_type='contact')
+    objects = TasksManager()
 
 
 class CompanyTask(_AbstractTaskModel):
@@ -370,7 +370,7 @@ class CompanyTask(_AbstractTaskModel):
     _element_type = fields._ConstantField('element_type',
                                          _BaseModel._ELEMENT_TYPES['company'])
 
-    objects = TasksManager(object_type='company')
+    objects = TasksManager()
 
 
 class _AbstractNoteModel(_BaseModel):
